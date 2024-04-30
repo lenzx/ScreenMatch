@@ -14,6 +14,6 @@ public class Main {
             mediaEvaluacionUsuario = mediaEvaluacionUsuario + notaMatrix;
         }
 
-        System.out.println("La media de la pelicula matrix Calculada es: " + mediaEvaluacionUsuario);
+        System.out.println("La media de la pelicula matrix Calculada es: " + mediaEvaluacionUsuario/3);
     }
 }
