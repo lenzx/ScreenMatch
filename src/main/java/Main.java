@@ -1,19 +1,34 @@
-import java.util.Scanner;
+import domain.pelicula.Pelicula;
+import domain.serie.Serie;
 
 public class Main {
     public static void main (String[] args) {
 
-        double mediaEvaluacionUsuario = 0;
+//        Pelicula matrix = new Pelicula();
+//
+//        matrix.setNombre("Matrix");
+//        matrix.setTiempoDuracionMinutos(120);
+//        matrix.setFechaLanzamiento(1999);
+//        matrix.setSinopsis("La mejor pelicula");
+//
+//        Pelicula encanto = new Pelicula();
+//
+//        encanto.setNombre("Encanto");
+//        encanto.setTiempoDuracionMinutos(120);
+//        encanto.setFechaLanzamiento(2022);
+//
+//        matrix.muestraFichaTecnica();
+//        encanto.muestraFichaTecnica();
+//
+//        Serie friends = new Serie();
+//        friends.setNombre("friends");
+//        friends.setFechaLanzamiento(1996);
+//        friends.setTemporadas(10);
+//        friends.setEpisodiosPorTemporada(22);
+//        friends.setMinutosPorEpisodio(30);
+//        friends.muestraFichaTecnica();
 
-        System.out.println("Bienvenidos a la inmersion Java");
-
-        for (int i = 0; i < 3; i++){
-            Scanner teclado = new Scanner(System.in);
-            System.out.println("ingresa la nota o evaluacion que le darias a matrix");
-            double notaMatrix = teclado.nextDouble();
-            mediaEvaluacionUsuario = mediaEvaluacionUsuario + notaMatrix;
-        }
-
-        System.out.println("La media de la pelicula matrix Calculada es: " + mediaEvaluacionUsuario/3);
+        Principal principal = new Principal();
+        principal.muestraElMenu();
     }
 }
